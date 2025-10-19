@@ -1,0 +1,8 @@
+model_name,model_type,n_gram_order,smoothing_method,parameters,perplexity,perplexity_str,total_tokens,num_test_sentences,has_zero_probability,sentences_with_zeros,notes
+MLE_n1,MLE,1,None,None,1059.6687152007353,1059.67,78669,3761,False,0,Normal evaluation
+MLE_n2,MLE,2,None,None,inf,INF,0,3761,True,3761,Zero probabilities encountered
+MLE_n3,MLE,3,None,None,inf,INF,0,3761,True,3761,Zero probabilities encountered
+MLE_n4,MLE,4,None,None,inf,INF,0,3761,True,3761,Zero probabilities encountered
+Add1_Trigram,Add-1 Smoothing,3,Add-1 Smoothing,None,3748.655046203854,3748.66,78669,3761,False,0,Normal evaluation
+LinearInterp_Trigram,Linear Interpolation,3,Linear Interpolation,"lambdas=[0.3, 0.5, 0.2]",185.25801040482375,185.26,78669,3761,False,0,Normal evaluation
+StupidBackoff_Trigram,Stupid Backoff,3,Stupid Backoff,alpha=0.6,135.7381524816087,135.74,78669,3761,False,0,Normal evaluation

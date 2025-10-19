@@ -1,0 +1,76 @@
+[
+  {
+    "perplexity": 1134.5508037201773,
+    "log_probability": -14067.984167862794,
+    "total_tokens": 2000,
+    "has_zero_probability": false,
+    "sentences_with_zeros": 0,
+    "model_info": {
+      "type": "MLE",
+      "n": 1,
+      "vocab_size": 10001,
+      "total_ngrams": 10001
+    },
+    "model_name": "MLE_n1",
+    "num_test_sentences": 100,
+    "perplexity_str": "1134.55",
+    "notes": "Normal evaluation"
+  },
+  {
+    "perplexity": 3890.0531856039347,
+    "log_probability": -16532.356217821565,
+    "total_tokens": 2000,
+    "has_zero_probability": false,
+    "sentences_with_zeros": 0,
+    "model_info": {
+      "type": "Add-1 Smoothing",
+      "n": 3,
+      "vocab_size": 10001,
+      "total_ngrams": 586558
+    },
+    "model_name": "Add-1 Smoothing_n3",
+    "num_test_sentences": 100,
+    "perplexity_str": "3890.05",
+    "notes": "Normal evaluation"
+  },
+  {
+    "perplexity": 194.4172930858808,
+    "log_probability": -10540.013688546122,
+    "total_tokens": 2000,
+    "has_zero_probability": false,
+    "sentences_with_zeros": 0,
+    "model_info": {
+      "type": "Linear Interpolation",
+      "n": 3,
+      "lambdas": [
+        0.1,
+        0.3,
+        0.6
+      ],
+      "vocab_size": 10001,
+      "total_ngrams": 586558
+    },
+    "model_name": "Linear Interpolation_n3",
+    "num_test_sentences": 100,
+    "perplexity_str": "194.42",
+    "notes": "Normal evaluation"
+  },
+  {
+    "perplexity": 153.04728331424383,
+    "log_probability": -10061.493829837173,
+    "total_tokens": 2000,
+    "has_zero_probability": false,
+    "sentences_with_zeros": 0,
+    "model_info": {
+      "type": "Stupid Backoff",
+      "n": 3,
+      "alpha": 0.4,
+      "vocab_size": 10001,
+      "total_ngrams": 586558
+    },
+    "model_name": "Stupid Backoff_n3",
+    "num_test_sentences": 100,
+    "perplexity_str": "153.05",
+    "notes": "Normal evaluation"
+  }
+]

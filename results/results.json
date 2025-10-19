@@ -1,0 +1,135 @@
+[
+  {
+    "perplexity": 1059.6687152007353,
+    "log_probability": -547985.5662874196,
+    "total_tokens": 78669,
+    "has_zero_probability": false,
+    "sentences_with_zeros": 0,
+    "model_info": {
+      "type": "MLE",
+      "n": 1,
+      "vocab_size": 10001,
+      "total_ngrams": 10001
+    },
+    "model_name": "MLE_n1",
+    "num_test_sentences": 3761,
+    "perplexity_str": "1059.67",
+    "notes": "Normal evaluation"
+  },
+  {
+    "perplexity": Infinity,
+    "log_probability": -Infinity,
+    "total_tokens": 0,
+    "has_zero_probability": true,
+    "sentences_with_zeros": 3761,
+    "model_info": {
+      "type": "MLE",
+      "n": 2,
+      "vocab_size": 10001,
+      "total_ngrams": 264990
+    },
+    "model_name": "MLE_n2",
+    "num_test_sentences": 3761,
+    "perplexity_str": "INF",
+    "notes": "Zero probabilities encountered"
+  },
+  {
+    "perplexity": Infinity,
+    "log_probability": -Infinity,
+    "total_tokens": 0,
+    "has_zero_probability": true,
+    "sentences_with_zeros": 3761,
+    "model_info": {
+      "type": "MLE",
+      "n": 3,
+      "vocab_size": 10001,
+      "total_ngrams": 586558
+    },
+    "model_name": "MLE_n3",
+    "num_test_sentences": 3761,
+    "perplexity_str": "INF",
+    "notes": "Zero probabilities encountered"
+  },
+  {
+    "perplexity": Infinity,
+    "log_probability": -Infinity,
+    "total_tokens": 0,
+    "has_zero_probability": true,
+    "sentences_with_zeros": 3761,
+    "model_info": {
+      "type": "MLE",
+      "n": 4,
+      "vocab_size": 10001,
+      "total_ngrams": 717733
+    },
+    "model_name": "MLE_n4",
+    "num_test_sentences": 3761,
+    "perplexity_str": "INF",
+    "notes": "Zero probabilities encountered"
+  },
+  {
+    "perplexity": 3748.655046203854,
+    "log_probability": -647379.1901781752,
+    "total_tokens": 78669,
+    "has_zero_probability": false,
+    "sentences_with_zeros": 0,
+    "model_info": {
+      "type": "Add-1 Smoothing",
+      "n": 3,
+      "vocab_size": 10001,
+      "total_ngrams": 586558
+    },
+    "model_name": "Add1_Trigram",
+    "num_test_sentences": 3761,
+    "perplexity_str": "3748.66",
+    "notes": "Normal evaluation"
+  },
+  {
+    "perplexity": 185.25801040482375,
+    "log_probability": -410789.81175322674,
+    "total_tokens": 78669,
+    "has_zero_probability": false,
+    "sentences_with_zeros": 0,
+    "model_info": {
+      "type": "Linear Interpolation",
+      "n": 3,
+      "lambdas": [
+        0.3,
+        0.5,
+        0.2
+      ],
+      "vocab_size": 10001,
+      "total_ngrams": 586558
+    },
+    "model_name": "LinearInterp_Trigram",
+    "num_test_sentences": 3761,
+    "perplexity_str": "185.26",
+    "notes": "Normal evaluation",
+    "best_lambdas": [
+      0.3,
+      0.5,
+      0.2
+    ],
+    "validation_perplexity": 200.2329879860141
+  },
+  {
+    "perplexity": 135.7381524816087,
+    "log_probability": -386322.0358947723,
+    "total_tokens": 78669,
+    "has_zero_probability": false,
+    "sentences_with_zeros": 0,
+    "model_info": {
+      "type": "Stupid Backoff",
+      "n": 3,
+      "alpha": 0.6,
+      "vocab_size": 10001,
+      "total_ngrams": 586558
+    },
+    "model_name": "StupidBackoff_Trigram",
+    "num_test_sentences": 3761,
+    "perplexity_str": "135.74",
+    "notes": "Normal evaluation",
+    "best_alpha": 0.6,
+    "validation_perplexity": 146.28456080740793
+  }
+]
