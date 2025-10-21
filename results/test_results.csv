@@ -1,5 +1,0 @@
-model_name,model_type,n_gram_order,smoothing_method,parameters,perplexity,perplexity_str,total_tokens,num_test_sentences,has_zero_probability,sentences_with_zeros,notes
-MLE_n1,MLE,1,None,None,1134.5508037201773,1134.55,2000,100,False,0,Normal evaluation
-Add-1 Smoothing_n3,Add-1 Smoothing,3,Add-1 Smoothing,None,3890.0531856039347,3890.05,2000,100,False,0,Normal evaluation
-Linear Interpolation_n3,Linear Interpolation,3,Linear Interpolation,"lambdas=[0.1, 0.3, 0.6]",194.4172930858808,194.42,2000,100,False,0,Normal evaluation
-Stupid Backoff_n3,Stupid Backoff,3,Stupid Backoff,alpha=0.4,153.04728331424383,153.05,2000,100,False,0,Normal evaluation
